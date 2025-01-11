@@ -22,6 +22,3 @@ The approximation technique used my 4x4 approximate multiplier module is based o
 - results : contains synthesis results
 ## Error analysis
 - mean relative error (MRE) : 7.03%
-## screenshots
-power report : "C:\Users\patel\Downloads\project_ss\power.png"
-utilisation report: "C:\Users\patel\Downloads\project_ss\utilisation.png"
