@@ -1,7 +1,7 @@
 # 4X4 approximate multiplier
 
 ## overview
-This repository contains the Verilog implementation of a 4x4 approximate multiplier optimized for reduced power and area. The design ensures that the Mean Relative Error (MRE) is less than 10%.
+This repository contains the Verilog implementation of a 4x4 approximate multiplier optimized for reduced power and area. The design ensures to minimize the Mean Relative Error (MRE).
 
 ## Approximation technique
 The approximation technique used my 4x4 approximate multiplier module is based on reducing hardware complexity by carefully selecting and simplifying the partial products and their subsequent addition.
@@ -14,7 +14,7 @@ The approximation technique used my 4x4 approximate multiplier module is based o
 3) the partial products are added using an approximate addition scheme.
    P1 represents the higher-order bits, so it is shifted left by 4 bits ({P1, 4'b0000}) to align with the higher significance level.
    The shifted P1 is added to P0 to produce the final result P.
-4) aprroximations introduced are that the cross-terms are ignored. These cross-terms typically contribute to the middle-order bits of the result, so their omission increases relative error but reduces hardware complexity. The addition of partial products is approximate because no carry is propagated between the shifted P1 and P0.
+4) approximations introduced are that the cross-terms are ignored. These cross-terms typically contribute to the middle-order bits of the result, so their omission increases relative error but reduces hardware complexity. The addition of partial products is approximate because no carry is propagated between the shifted P1 and P0.
 
 ## file structure
 - ap3.v : verilog code of 4X4 approximate multiplier
