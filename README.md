@@ -21,4 +21,4 @@ The approximation technique used my 4x4 approximate multiplier module is based o
 - multiplier_tb.v : testbench to verify the design
 - results : contains synthesis results
 ## Error analysis
-- mean relative error (MRE) : 7.03%
+- mean relative error (MRE) : 38.93%
